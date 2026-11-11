@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="48497DB5-2377-F95A-BB22-270B75CAD5F1" containerWithKeyObject="65ACF623-F030-4B8D-4BBE-F1B58ED22609" localFKIndex="5A830C82-F4FB-6866-4F03-C348A6909B69" name="ACM_RESPOSTA_ACM_ORIENTACAO_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>67A6CB7E-61D0-F5D2-E119-CBF7EFC8727E</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<referredTableLongName>ACM_ORIENTACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FF3A7754-9045-25D2-A52B-26F60EF8C33A</referredTableID>
+<keyObject>1249D948-E023-3C8B-595E-E91430C51183</keyObject>
+<referredKeyID>1249D948-E023-3C8B-595E-E91430C51183</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_orientacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

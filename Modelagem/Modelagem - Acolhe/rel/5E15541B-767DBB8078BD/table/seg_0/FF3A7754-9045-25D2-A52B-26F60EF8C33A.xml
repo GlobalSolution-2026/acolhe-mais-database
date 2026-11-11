@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF3A7754-9045-25D2-A52B-26F60EF8C33A" name="ACM_ORIENTACAO">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>07D714CF-8C80-523B-B080-88B3DB815A53</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_orientacao" id="CD1788F2-2635-666E-41CF-CAF53B3A8FE0">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>C7E41BA0-B382-6F1A-D237-383ED95615E6</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_orientacao" id="18D56D1D-49F8-1E6B-DBA9-769935B72EB9">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>D1CFA126-4E78-8850-A58D-63F5896857AA</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_cor" id="B40953E4-DB13-08DC-84A5-BF6A3F66AEDB">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>A8ECAB58-B178-5316-B67C-4C6AE5DEB8D4</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_ORIENTACAO_COR</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="AMARELO" description="Urgente - UPA"/>
+<valueDef value="AZUL" description="Nao urgente - UBS"/>
+<valueDef value="LARANJA" description="Muito urgente - Pronto-socorro"/>
+<valueDef value="VERDE" description="Pouco urgente - UBS"/>
+<valueDef value="VERMELHO" description="Emergencia - SAMU"/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_destino" id="801D0722-94D9-1BF4-B622-838C9C94D0B3">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>B1A6182B-B6E2-77E0-9ADF-7B325206855B</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_ORIENTACAO_DESTINO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<listOfValues>
+<valueDef value="PRONTO_SOCORRO" description="Pronto-socorro"/>
+<valueDef value="SAMU" description="Ligar 192"/>
+<valueDef value="UBS" description="Unidade Basica de Saude"/>
+<valueDef value="UPA" description="Unidade de Pronto Atendimento"/>
+</listOfValues>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_dor" id="694DB203-5272-233C-AC56-87FD4622EFF4">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>0463DD87-18A5-53AE-EC66-34A0705F9DA2</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_ORIENTACAO_DOR</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>10</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="fl_elevada_modelo" id="0FD2BCB1-60C7-CDF2-16C3-2435259B7235">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>4E482857-FF64-F76E-376C-17DA9516AA4C</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_ORIENTACAO_ELEVADA</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="Nao elevada"/>
+<valueDef value="S" description="Elevada pelo modelo"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_queixa" id="B1C66AB4-C21C-EDD4-B7C8-1BE5B76586C0">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>FD29B36F-7E0E-C4AA-5212-796EC5028C30</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94706CC3-D362-D067-0A4F-1A4A5AC71638" referredColumn="839FD121-FDA8-B005-F0A2-C12A6DCD0E04"/>
+</associations>
+</Column>
+<Column name="id_cidadao" id="3007B128-D460-C217-B43E-9913259304C4">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>9B47E04E-1476-56A5-EA53-05CF32574C19</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E241D69-1B56-6680-B9DA-195567490BCA" referredColumn="DF2556A9-2D44-C521-86B1-0DEACA2F30A9"/>
+</associations>
+</Column>
+<Column name="id_unidade_indicada" id="74EC132F-6EE6-EACE-067D-972B7FA367F0">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>F011B452-A085-FAF7-71F4-820592E33610</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9349C739-2F3C-B06E-7D25-BA44EAD0C871" referredColumn="40601A83-9E6C-68F3-42F2-62EE1BBF5074"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1249D948-E023-3C8B-595E-E91430C51183" name="ACM_ORIENTACAO_PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>48228BC2-EFFA-3645-C8E6-53CFD262BAC7</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD1788F2-2635-666E-41CF-CAF53B3A8FE0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B45F6AA5-A62A-9958-BB91-1620FFB8ABB5" name="ACM_ORIENTACAO_ACM_CIDADAO_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>A4279C5F-6066-A39D-6FA9-21AB7E58F0F1</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3007B128-D460-C217-B43E-9913259304C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97F02800-8B8E-7760-1841-48C9D48CD03A" name="ACM_ORIENTACAO_ACM_QUEIXA_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>2DA7CDBC-0E00-9584-0587-71EB09B5342B</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1C66AB4-C21C-EDD4-B7C8-1BE5B76586C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="166AE7F6-B661-FEF5-55F2-192E0C5E995A" name="ACM_ORIENTACAO_ACM_UNIDADE_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>1653E06B-5B4C-4DEB-EADA-D428234260FC</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74EC132F-6EE6-EACE-067D-972B7FA367F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F88A3350-B026-9F02-E9C8-E4C68F10A304" name="ACM_UNIDADE">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>DFC618E9-3895-3BE4-875D-1A07BAEDD24B</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_unidade" id="40601A83-9E6C-68F3-42F2-62EE1BBF5074">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>F3C3759C-E9F4-9C30-7F95-D4A7CD8D0676</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_unidade" id="9E15D39B-0A3E-0F92-06CC-13E0CE58E0AB">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>29DE9FC9-6123-FF59-1BF1-A6576C35B024</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_unidade" id="16F5E6EC-FAC9-86CB-F6D2-631DA990568E">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>58CE64F7-2CD8-D359-81B3-71B0ED0DA504</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_UNIDADE_TIPO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<listOfValues>
+<valueDef value="UBS" description="Unidade Basida de Saude"/>
+<valueDef value="UPA" description="Unidade de Pronto Atendimento"/>
+</listOfValues>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_endereco" id="24A20FF3-C081-54C1-712D-E7C707C45AA3">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>062CDDB6-ECE2-9BEC-88BD-56E26BA270D5</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_cep" id="4DF48BBE-6675-1D14-DA37-4FB39D5FB75A">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>41DC9874-569D-EFDE-BF16-213F1CC5D836</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefone" id="9FCD0FE5-F471-20A1-274B-6B0575C4C186">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>2E605C39-8FFB-6775-6012-2BB2A62AA0D5</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B508FE36-1F3B-852F-4FCF-8A44BFADD736" name="ACM_UNIDADE_PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>C8AA74C1-71F7-8566-568D-307E0FE0F4D5</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40601A83-9E6C-68F3-42F2-62EE1BBF5074"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

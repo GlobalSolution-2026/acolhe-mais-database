@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="99B5C31D-5667-7844-A631-11A8DDD6D2F6" name="ACM_LISTA_DIA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:14:22 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_lista" id="FFA99813-3487-3A0C-2212-AEE2E0D4F935">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:14:52 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_entrada" id="8E075869-86D0-B3A6-64EE-856E8BEA8C41">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:15:06 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_status" id="72159349-2890-BB65-AF79-DF2ABC90DD0D">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:15:25 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_LISTA_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<listOfValues>
+<valueDef value="AGUARDANDO" description="Na lista, esperando vaga"/>
+<valueDef value="ENCAIXADO" description="Conseguiu a vaga"/>
+<valueDef value="NAO_ENCAIXADO" description="Dia encerrado sem vaga"/>
+<valueDef value="OFERTADO" description="Vaga oferecida, aguardando resposta"/>
+</listOfValues>
+<defaultValue>AGUARDANDO</defaultValue>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fl_prioridade" id="40BFCC5B-DC38-D13E-D843-824CBACC4AA1">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-10 18:22:28 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_LISTA_PRIORIDADE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="Não"/>
+<valueDef value="S" description="Sim"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cidadao" id="160F088D-3488-9708-93EA-A00168703C15">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:05:43 UTC</createdTime>
+<generatorID>9E025DFA-C7FE-0239-CAB1-76A1A3A31A7E</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<referedAttribute>BEB1F2D7-BA9F-F035-E633-07F1A74A1076</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_unidade" id="7E08C124-68F6-5096-36EE-AABC156CFABA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:07:37 UTC</createdTime>
+<generatorID>9ED23BD0-D6A7-4A24-C28F-C0EA1D688EF4</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<referedAttribute>F3C3759C-E9F4-9C30-7F95-D4A7CD8D0676</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_orientacao" id="4778D2B2-EC06-8DB0-6E2A-4AA4EBE70D55">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:10:23 UTC</createdTime>
+<generatorID>A2988D1E-CF09-7AB8-6970-879E9F1C0724</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<referedAttribute>C7E41BA0-B382-6F1A-D237-383ED95615E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FCDF949C-3948-2972-6B12-0FF60A3CF666" name="ACM_LISTA_DIA PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:15:04 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FFA99813-3487-3A0C-2212-AEE2E0D4F935</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

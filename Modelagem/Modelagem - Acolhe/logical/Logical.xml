@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="61B965E4-C5ED-9D89-BCA1-DABA9B32A984" mainViewID="17038F30-6E50-1219-8BFC-F9AD6A054FAB">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:13:37 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

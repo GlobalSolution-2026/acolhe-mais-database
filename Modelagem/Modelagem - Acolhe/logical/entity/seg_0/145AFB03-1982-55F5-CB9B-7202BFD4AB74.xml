@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="145AFB03-1982-55F5-CB9B-7202BFD4AB74" name="ACM_USUARIO">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:49:37 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_usuario" id="2963A63E-6F75-0E42-D4FF-D123835581FF">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:49:52 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_usuario" id="33FF4501-9CC0-646F-71C1-CDC43CF3A0CF">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:50:08 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_email" id="BBD404B1-60DB-0043-1184-25CB8998CD55">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:50:34 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_senha_hash" id="DEAC7377-271E-AD76-A372-5B385A6FF677">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:51:05 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_perfil" id="B088B014-08BC-9BA7-513C-79EC888DF37C">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:51:39 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_USUARIO_PERFIL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="GESTAO" description="Gestao da secretaria"/>
+<valueDef value="RECEPCAO" description="Recepcao da UBS"/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fl_ativo" id="7EB1ADC1-82A8-59E4-2A45-28FF78AC0661">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:52:06 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_USUARIO_ATIVO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="Inativo"/>
+<valueDef value="S" description="Ativo"/>
+</listOfValues>
+<defaultValue>S</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_unidade" id="29F11F49-109A-6807-B98C-ACA8FC328F0B">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:19:14 UTC</createdTime>
+<generatorID>E554CCD7-A4A1-823D-CEC4-FC54FB30BBD2</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F3C3759C-E9F4-9C30-7F95-D4A7CD8D0676</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="097F7831-F9AE-AA3F-6592-A6C352C4AB49" name="ACM_USUARIO PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:50:06 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2963A63E-6F75-0E42-D4FF-D123835581FF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5446C282-19F6-03FB-D465-107F608C7EF5" name="UQ_ACM_USUARIO_EMAIL">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:52:42 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<newElementsIDs>BBD404B1-60DB-0043-1184-25CB8998CD55</newElementsIDs>
+<usedAttributes>
+<attributeRef>BBD404B1-60DB-0043-1184-25CB8998CD55</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

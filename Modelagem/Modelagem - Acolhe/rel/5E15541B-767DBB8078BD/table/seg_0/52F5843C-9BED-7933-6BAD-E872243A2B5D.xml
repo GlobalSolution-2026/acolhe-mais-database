@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="52F5843C-9BED-7933-6BAD-E872243A2B5D" name="ACM_HORARIO">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>2FC1D213-B381-74C8-D717-536BF386EDED</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_horario" id="F4E7F76A-BBA5-15CB-38CC-6B4A969639D1">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>68B0AD62-857E-4945-4F48-1704139553E2</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_horario" id="4D3B8162-5226-03C2-BFF1-B52ED84A6C7F">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>63C84D48-5635-7A44-9794-264D07481782</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_duracao_min" id="BB8DBE8B-EEB6-F66C-DA23-6246CFAC6DE8">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>BCAE3AB0-79CF-B6D3-C699-304AF936C76D</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_HORARIO_DURACAO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>240</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="id_unidade" id="9C9E61AF-F7EC-B2C4-44D9-F729BBF02637">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>D7B72F19-78F2-1048-3690-BCABA0BACA82</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="774D850C-84BF-6C42-BFD1-49142D1C33EB" referredColumn="40601A83-9E6C-68F3-42F2-62EE1BBF5074"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C8FE12B-EE25-8775-BB40-5DEEBC952B0E" name="ACM_HORARIO_PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>E7B76FB2-DE72-B663-22BB-B3073AEBBCC4</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4E7F76A-BBA5-15CB-38CC-6B4A969639D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BB9B09C-D5AB-BCBA-C2A7-EAFC68C483ED" name="UQ_ACM_HORARIO_UNIDADE_DATA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>6B1825E2-76AA-DADC-DA6F-545DA6D6B9C1</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D3B8162-5226-03C2-BFF1-B52ED84A6C7F"/>
+<colUsage columnID="9C9E61AF-F7EC-B2C4-44D9-F729BBF02637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DB926C4-FEBD-042B-5D5C-7291776BA838" name="ACM_HORARIO_ACM_UNIDADE_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>9A2140DA-8C98-D62D-6E39-49885A20CF61</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C9E61AF-F7EC-B2C4-44D9-F729BBF02637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

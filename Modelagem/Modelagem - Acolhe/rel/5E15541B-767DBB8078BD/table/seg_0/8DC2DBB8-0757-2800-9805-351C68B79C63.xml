@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DC2DBB8-0757-2800-9805-351C68B79C63" name="ACM_USUARIO">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>145AFB03-1982-55F5-CB9B-7202BFD4AB74</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="5A5CE37A-DC9B-E43C-54B4-EB584B683645">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>2963A63E-6F75-0E42-D4FF-D123835581FF</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_usuario" id="405825DB-BF9A-1533-2B4B-65D757071E27">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>33FF4501-9CC0-646F-71C1-CDC43CF3A0CF</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_email" id="DD106FB3-2CA4-9C94-CADC-C740D5D345F9">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>BBD404B1-60DB-0043-1184-25CB8998CD55</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_senha_hash" id="31685B0F-B56B-5D66-9D75-4CFCD6887F8B">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>DEAC7377-271E-AD76-A372-5B385A6FF677</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_perfil" id="0C0833E6-D0F8-AC34-8A09-9CF042354F4D">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>B088B014-08BC-9BA7-513C-79EC888DF37C</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_USUARIO_PERFIL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="GESTAO" description="Gestao da secretaria"/>
+<valueDef value="RECEPCAO" description="Recepcao da UBS"/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fl_ativo" id="11C843AC-27DE-FEB5-FDE2-9B9A03BB5693">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>7EB1ADC1-82A8-59E4-2A45-28FF78AC0661</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_USUARIO_ATIVO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="Inativo"/>
+<valueDef value="S" description="Ativo"/>
+</listOfValues>
+<defaultValue>S</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_unidade" id="3F94A92F-76CC-1A65-2B43-F6E07FEE5A9D">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>29F11F49-109A-6807-B98C-ACA8FC328F0B</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB9163E6-C631-BB09-4665-01E221DB1F3C" referredColumn="40601A83-9E6C-68F3-42F2-62EE1BBF5074"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F4ADE5E-2BE5-E574-5222-24307A7268CA" name="ACM_USUARIO_PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>097F7831-F9AE-AA3F-6592-A6C352C4AB49</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A5CE37A-DC9B-E43C-54B4-EB584B683645"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE729C8B-2914-AA35-4CEC-5AD0FDB33800" name="UQ_ACM_USUARIO_EMAIL">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>5446C282-19F6-03FB-D465-107F608C7EF5</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD106FB3-2CA4-9C94-CADC-C740D5D345F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACC83E96-07FF-75DA-B095-6DCE8344DBB5" name="ACM_USUARIO_ACM_UNIDADE_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>E554CCD7-A4A1-823D-CEC4-FC54FB30BBD2</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F94A92F-76CC-1A65-2B43-F6E07FEE5A9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_ACM_USUARIO_UNIDADE" directorySegmentName="seg_0" id="7A05789E-58EA-F1CB-C22C-D87390A6A857">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:32:55 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<rule><![CDATA[ds_perfil = 'GESTAO' OR id_unidade IS NOT NULL]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

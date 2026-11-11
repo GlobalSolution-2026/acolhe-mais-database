@@ -1,0 +1,230 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3418C18C-EBCA-CDE8-31E2-EB44BA59E3FB" name="ACM_CONSULTA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>3BC3F63D-A48B-7CD2-0575-D8E9DA8A2DD6</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_consulta" id="0FD4306A-96D9-2D3D-B581-D8EE35DB3C7F">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>B4840F07-DB3C-9547-FE2E-230E31133277</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_agendamento" id="C6471688-EF47-9F7D-7561-5BFC3E710B3A">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>2769224F-AF72-B5DC-DD96-5F575D625548</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_confirmacao" id="9AFDB88C-3C96-DC61-E5A9-EDCD3A67098F">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>43209F4A-D551-7BAF-6AB9-F0EE7FB0C580</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_canal_confirmacao" id="A83038D7-0E83-5602-68BD-2C66E50F5084">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-10 18:18:11 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_CONSULTA_CANAL</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="APP" description=""/>
+<valueDef value="PRESENCIAL" description=""/>
+<valueDef value="TELEFONE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_status" id="B28DB199-81AB-2CDF-191A-6C3D44DA2915">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>8D15672B-52FB-6152-9507-882BDF471881</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_CONSULTA_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="AGENDADA" description="Marcada, aguardando confirmacao"/>
+<valueDef value="CONFIRMADA" description="Paciente confirmou presenca"/>
+<valueDef value="FALTA" description="Paciente nao compareceu"/>
+<valueDef value="LIBERADA" description="Vaga devolvida para a lista do dia"/>
+<valueDef value="REALIZADA" description="Paciente compareceu"/>
+</listOfValues>
+<defaultValue>AGENDADA</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_prob_falta" id="F118067B-BEF6-FB17-BE47-69260F9E07D7">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>52C813C1-B5E1-A546-8FB4-877E324092ED</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_CONSULTA_PROB</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ds_risco_falta" id="851B6AC4-0A20-84BC-BEAE-3DBD7DCFD73F">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>3C97386B-D440-A733-A342-D3353B2A3D9A</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_CONSULTA_RISCO</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<listOfValues>
+<valueDef value="ALTO" description="Risco alto de falta"/>
+<valueDef value="BAIXO" description="Risco baixo de falta"/>
+</listOfValues>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_horario" id="B9C89FE4-C807-0C81-78B4-B6E036B0E58A">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>9FE8A59C-00CC-7336-CBC0-53089754D2F0</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E42DF282-6CFB-BC03-2B0F-2FEE680C9D3F" referredColumn="F4E7F76A-BBA5-15CB-38CC-6B4A969639D1"/>
+</associations>
+</Column>
+<Column name="id_cidadao" id="4A8F26BA-10B5-8D68-DAB8-092BF7BCCFD2">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>70916C6D-1859-BE08-CEAB-C3C186F1B519</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECF59B7E-8537-2CC0-889F-21D2D650235C" referredColumn="DF2556A9-2D44-C521-86B1-0DEACA2F30A9"/>
+</associations>
+</Column>
+<Column name="id_orientacao" id="E20FFD47-7ED4-BD03-BE52-E926A40E069F">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>1D8AAB52-5972-6838-3EC2-F53FF370BB24</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49F28854-6CC5-E7C6-6BC9-5B556FA7415F" referredColumn="CD1788F2-2635-666E-41CF-CAF53B3A8FE0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="122AF20A-8618-F074-3204-7014DBB6264B" name="ACM_CONSULTA_PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>73CD70C8-5B6A-FD8E-A86A-6521FA95EAE7</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FD4306A-96D9-2D3D-B581-D8EE35DB3C7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72D9E7D8-BCF7-EF80-6A7A-030AAB011E69" name="ACM_CONSULTA_ACM_CIDADAO_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>457B3F81-8FEE-C6F4-4AE4-01E2A78C6069</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A8F26BA-10B5-8D68-DAB8-092BF7BCCFD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F30521B-CE27-D611-B9D8-B4165FD45231" name="ACM_CONSULTA_ACM_HORARIO_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>EEAD2C4E-D823-3587-034C-FB0D82FD1125</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9C89FE4-C807-0C81-78B4-B6E036B0E58A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="608CA543-8724-688E-5277-639FFFEC3BA2" name="ACM_CONSULTA_ACM_ORIENTACAO_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>CC8F9D04-E92A-0245-ADAF-F3205BC3960D</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E20FFD47-7ED4-BD03-BE52-E926A40E069F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_ACM_CONSULTA_CONFIRMACAO" directorySegmentName="seg_0" id="7434DCEA-02C5-69A0-3E44-B05E0D10B0A9">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-10 18:21:02 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<rule><![CDATA[(dt_confirmacao IS NULL AND ds_canal_confirmacao IS NULL)
+OR (dt_confirmacao IS NOT NULL AND ds_canal_confirmacao IS NOT NULL)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="07D714CF-8C80-523B-B080-88B3DB815A53" name="ACM_ORIENTACAO">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:51:08 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_orientacao" id="C7E41BA0-B382-6F1A-D237-383ED95615E6">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:51:32 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_orientacao" id="D1CFA126-4E78-8850-A58D-63F5896857AA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:51:48 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_cor" id="A8ECAB58-B178-5316-B67C-4C6AE5DEB8D4">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:52:12 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_ORIENTACAO_COR</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="AMARELO" description="Urgente - UPA"/>
+<valueDef value="AZUL" description="Nao urgente - UBS"/>
+<valueDef value="LARANJA" description="Muito urgente - Pronto-socorro"/>
+<valueDef value="VERDE" description="Pouco urgente - UBS"/>
+<valueDef value="VERMELHO" description="Emergencia - SAMU"/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_destino" id="B1A6182B-B6E2-77E0-9ADF-7B325206855B">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:52:46 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_ORIENTACAO_DESTINO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<listOfValues>
+<valueDef value="PRONTO_SOCORRO" description="Pronto-socorro"/>
+<valueDef value="SAMU" description="Ligar 192"/>
+<valueDef value="UBS" description="Unidade Basica de Saude"/>
+<valueDef value="UPA" description="Unidade de Pronto Atendimento"/>
+</listOfValues>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_dor" id="0463DD87-18A5-53AE-EC66-34A0705F9DA2">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:53:06 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_ORIENTACAO_DOR</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>10</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="fl_elevada_modelo" id="4E482857-FF64-F76E-376C-17DA9516AA4C">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:53:38 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_ORIENTACAO_ELEVADA</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="Nao elevada"/>
+<valueDef value="S" description="Elevada pelo modelo"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_queixa" id="FD29B36F-7E0E-C4AA-5212-796EC5028C30">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:43:52 UTC</createdTime>
+<generatorID>2DA7CDBC-0E00-9584-0587-71EB09B5342B</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<referedAttribute>E9777C6B-7F3B-92C9-C20D-1A461174F453</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cidadao" id="9B47E04E-1476-56A5-EA53-05CF32574C19">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:45:52 UTC</createdTime>
+<generatorID>A4279C5F-6066-A39D-6FA9-21AB7E58F0F1</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>BEB1F2D7-BA9F-F035-E633-07F1A74A1076</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_unidade_indicada" id="F011B452-A085-FAF7-71F4-820592E33610">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:47:49 UTC</createdTime>
+<generatorID>1653E06B-5B4C-4DEB-EADA-D428234260FC</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F3C3759C-E9F4-9C30-7F95-D4A7CD8D0676</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="48228BC2-EFFA-3645-C8E6-53CFD262BAC7" name="ACM_ORIENTACAO PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:51:46 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7E41BA0-B382-6F1A-D237-383ED95615E6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

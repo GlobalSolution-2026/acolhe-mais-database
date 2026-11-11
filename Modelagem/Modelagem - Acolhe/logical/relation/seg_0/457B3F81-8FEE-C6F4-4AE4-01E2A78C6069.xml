@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ACM_CONSULTA_CIDADAO" directorySegmentName="seg_0" id="457B3F81-8FEE-C6F4-4AE4-01E2A78C6069">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:01:44 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<sourcePk>7E14B5DA-9048-F8AA-0FAE-5DD8ED1466D2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9B832F55-9C95-9059-58BE-8FAA8AA35369</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3BC3F63D-A48B-7CD2-0575-D8E9DA8A2DD6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

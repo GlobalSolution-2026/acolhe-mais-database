@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E88C521F-74B1-8D0F-78D6-08FFEF1F8146" containerWithKeyObject="23C6FDF8-FE09-86C9-C66C-D92305940922" localFKIndex="C6030BEF-21DC-55EA-474D-C5C4EA104AFE" name="ACM_PERGUNTA_ACM_QUEIXA_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>3B788638-F45E-0CDF-7020-56E947BECE5D</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<referredTableLongName>ACM_QUEIXA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CD48A64D-1C5F-0E07-5460-3DFCD57EC55E</referredTableID>
+<keyObject>76561C3C-5279-95E7-8DF4-4BA42BF1F69E</keyObject>
+<referredKeyID>76561C3C-5279-95E7-8DF4-4BA42BF1F69E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_queixa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

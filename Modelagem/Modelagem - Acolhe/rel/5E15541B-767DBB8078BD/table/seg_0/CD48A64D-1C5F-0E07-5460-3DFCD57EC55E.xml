@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CD48A64D-1C5F-0E07-5460-3DFCD57EC55E" name="ACM_QUEIXA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>7589F755-8F52-CBB3-E408-E22C3EAD495C</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_queixa" id="839FD121-FDA8-B005-F0A2-C12A6DCD0E04">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>E9777C6B-7F3B-92C9-C20D-1A461174F453</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_queixa" id="94B1F67C-5538-87D8-4BB1-26F40FAA8AED">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>61E146B1-6FDB-81F7-C22A-FD0BCD1247CE</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="76561C3C-5279-95E7-8DF4-4BA42BF1F69E" name="ACM_QUEIXA_PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>C4158BF9-DEB0-E706-5BAE-37B0AFA368A7</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="839FD121-FDA8-B005-F0A2-C12A6DCD0E04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F68A453-573C-EEAC-F468-F8D4F99AB8C8" name="UQ_ACM_QUEIXA_NOME">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>BFC06F71-A2AE-FF0F-C524-B13A955817A9</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94B1F67C-5538-87D8-4BB1-26F40FAA8AED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

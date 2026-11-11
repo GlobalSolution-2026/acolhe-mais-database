@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8E241D69-1B56-6680-B9DA-195567490BCA" containerWithKeyObject="FF3A7754-9045-25D2-A52B-26F60EF8C33A" localFKIndex="B45F6AA5-A62A-9958-BB91-1620FFB8ABB5" name="ACM_ORIENTACAO_ACM_CIDADAO_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>A4279C5F-6066-A39D-6FA9-21AB7E58F0F1</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<referredTableLongName>ACM_CIDADAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BC8DDB19-0EFB-75DA-1D1A-18B1871DDFE5</referredTableID>
+<keyObject>3AA64F49-C703-D7DF-C75F-9789AA0499AB</keyObject>
+<referredKeyID>3AA64F49-C703-D7DF-C75F-9789AA0499AB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_cidadao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

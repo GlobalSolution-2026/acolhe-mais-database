@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ACM_RESPOSTA_PERGUNTA" directorySegmentName="seg_0" id="0911C59E-81E6-464A-B725-CF4C3F912D7A">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:53:00 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<sourcePk>2D30F24D-074C-4BF9-1D88-6DB6E2439B49</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>603CF668-6153-0F3C-AEAF-D2AC102FA5BA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4A8604D1-A3D9-B5CA-4765-687888DD130E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

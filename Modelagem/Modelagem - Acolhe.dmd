@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelagem - Acolhe" id="26BD50B4-67D7-D562-6934-94EECE284FA0" version="3.5">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:13:37 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>26BD50B4-67D7-D562-6934-94EECE284FA0</designId>
+</OSDM_Design>

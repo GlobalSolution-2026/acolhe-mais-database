@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ACM_ORIENTACAO_QUEIXA" directorySegmentName="seg_0" id="2DA7CDBC-0E00-9584-0587-71EB09B5342B">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:43:52 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<sourcePk>C4158BF9-DEB0-E706-5BAE-37B0AFA368A7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7589F755-8F52-CBB3-E408-E22C3EAD495C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>07D714CF-8C80-523B-B080-88B3DB815A53</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

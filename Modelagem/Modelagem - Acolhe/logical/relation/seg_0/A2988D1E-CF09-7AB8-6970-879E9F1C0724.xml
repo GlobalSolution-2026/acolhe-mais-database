@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_ACM_LISTA_ORIENTACAO" directorySegmentName="seg_0" id="A2988D1E-CF09-7AB8-6970-879E9F1C0724">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:10:23 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<sourcePk>48228BC2-EFFA-3645-C8E6-53CFD262BAC7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>07D714CF-8C80-523B-B080-88B3DB815A53</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>99B5C31D-5667-7844-A631-11A8DDD6D2F6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

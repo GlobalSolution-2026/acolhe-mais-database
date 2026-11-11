@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="603CF668-6153-0F3C-AEAF-D2AC102FA5BA" name="ACM_PERGUNTA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:41:45 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pergunta" id="BAA707DC-C206-414D-17D6-C8CC55158D02">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:42:24 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_pergunta" id="0B98F63C-C2EF-B51B-C9F6-3B49FE352FAF">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:42:43 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_ordem" id="737D64D9-FD3A-5F5D-6918-26DDE889E728">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:43:08 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_PERGUNTA_ORDEM</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ds_cor_se_sim" id="FC1777A4-680B-5447-F154-3C7D874651D5">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:43:49 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_PERGUNTA_COR</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="AMARELO" description="Urgente - UPA"/>
+<valueDef value="AZUL" description="Nao urgente - UBS"/>
+<valueDef value="LARANJA" description="Muito urgente - Pronto-socorro"/>
+<valueDef value="VERDE" description="Pouco urgente - UBS"/>
+<valueDef value="VERMLEHO" description="Emergencia - SAMU"/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_queixa" id="9A0B9119-375B-15A5-21BD-34143EA55891">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:40:32 UTC</createdTime>
+<generatorID>3B788638-F45E-0CDF-7020-56E947BECE5D</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<referedAttribute>E9777C6B-7F3B-92C9-C20D-1A461174F453</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D30F24D-074C-4BF9-1D88-6DB6E2439B49" name="ACM_PERGUNTA PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 12:42:39 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BAA707DC-C206-414D-17D6-C8CC55158D02</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

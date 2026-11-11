@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65ACF623-F030-4B8D-4BBE-F1B58ED22609" name="ACM_RESPOSTA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>4A8604D1-A3D9-B5CA-4765-687888DD130E</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ds_resposta" id="9E13A64A-E72D-5B32-B59E-5DF82236E31D">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>F832C408-A8F0-2D74-4934-9172649E142F</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_RESPOSTA_VALOR</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<listOfValues>
+<valueDef value="NAO" description="Nao"/>
+<valueDef value="NAO_SEI" description="Nao sei"/>
+<valueDef value="SIM" description="Sim"/>
+</listOfValues>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_orientacao" id="AD4EA760-C899-5015-D682-02707BEA9D70">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>33A9F6C6-4A20-04E8-D6DC-6ADFAF10D0F2</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48497DB5-2377-F95A-BB22-270B75CAD5F1" referredColumn="CD1788F2-2635-666E-41CF-CAF53B3A8FE0"/>
+</associations>
+</Column>
+<Column name="id_pergunta" id="ED77C509-EA92-A7AA-BA88-278E773DA54A">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>81F59D09-5C11-60B0-4987-0C7533D8BC02</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9112578E-9988-8ABA-9003-DC707AF0572D" referredColumn="6CCBB4CD-91DA-C21F-B011-B1B58DDBE6EB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="757ADF6B-64BC-5245-5FEF-E57F695BD94E" name="ACM_RESPOSTA_PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>18F43851-4EF1-EBE4-76DE-79E19B1B0063</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD4EA760-C899-5015-D682-02707BEA9D70"/>
+<colUsage columnID="ED77C509-EA92-A7AA-BA88-278E773DA54A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A830C82-F4FB-6866-4F03-C348A6909B69" name="ACM_RESPOSTA_ACM_ORIENTACAO_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>67A6CB7E-61D0-F5D2-E119-CBF7EFC8727E</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD4EA760-C899-5015-D682-02707BEA9D70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5DECA71-A743-5DDE-25A4-A6D2FF3A8F7D" name="ACM_RESPOSTA_ACM_PERGUNTA_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>0911C59E-81E6-464A-B725-CF4C3F912D7A</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ED77C509-EA92-A7AA-BA88-278E773DA54A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

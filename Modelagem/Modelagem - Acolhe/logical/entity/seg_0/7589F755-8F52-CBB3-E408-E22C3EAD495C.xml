@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7589F755-8F52-CBB3-E408-E22C3EAD495C" name="ACM_QUEIXA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:46:21 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_queixa" id="E9777C6B-7F3B-92C9-C20D-1A461174F453">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:47:09 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_queixa" id="61E146B1-6FDB-81F7-C22A-FD0BCD1247CE">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:47:22 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C4158BF9-DEB0-E706-5BAE-37B0AFA368A7" name="ACM_QUEIXA PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:47:21 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E9777C6B-7F3B-92C9-C20D-1A461174F453</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BFC06F71-A2AE-FF0F-C524-B13A955817A9" name="UQ_ACM_QUEIXA_NOME">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-06 20:47:51 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<newElementsIDs>61E146B1-6FDB-81F7-C22A-FD0BCD1247CE</newElementsIDs>
+<usedAttributes>
+<attributeRef>61E146B1-6FDB-81F7-C22A-FD0BCD1247CE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

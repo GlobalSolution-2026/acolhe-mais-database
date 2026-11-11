@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E9B9EB9-35C2-0F03-5930-B812926D2FD7" name="ACM_LISTA_DIA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>99B5C31D-5667-7844-A631-11A8DDD6D2F6</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_lista" id="9DDA694E-F600-301F-1097-51CD21AF5F62">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>FFA99813-3487-3A0C-2212-AEE2E0D4F935</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_entrada" id="DB6679A2-C056-AE5F-F740-BB0DC42B9EBE">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>8E075869-86D0-B3A6-64EE-856E8BEA8C41</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_status" id="D6E17B6D-76DA-39BB-77F6-C3A310606979">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>72159349-2890-BB65-AF79-DF2ABC90DD0D</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_LISTA_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<listOfValues>
+<valueDef value="AGUARDANDO" description="Na lista, esperando vaga"/>
+<valueDef value="ENCAIXADO" description="Conseguiu a vaga"/>
+<valueDef value="NAO_ENCAIXADO" description="Dia encerrado sem vaga"/>
+<valueDef value="OFERTADO" description="Vaga oferecida, aguardando resposta"/>
+</listOfValues>
+<defaultValue>AGUARDANDO</defaultValue>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fl_prioridade" id="A82743B8-9DCD-D145-86CD-E19C36CD5FD2">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-10 18:24:30 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<constraintName>CK_ACM_LISTA_PRIORIDADE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="Não"/>
+<valueDef value="S" description="Sim"/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cidadao" id="129B8B78-CD7C-77C4-BB0A-1B5CBAF24C4D">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>160F088D-3488-9708-93EA-A00168703C15</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0948DD7-AEC9-7455-BEE5-86605A8AEA58" referredColumn="DF2556A9-2D44-C521-86B1-0DEACA2F30A9"/>
+</associations>
+</Column>
+<Column name="id_unidade" id="4FA6A09F-B02A-2AF2-EE03-F37901D9F3A2">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>7E08C124-68F6-5096-36EE-AABC156CFABA</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E56F6800-5936-0B4C-50C4-7F9186796A1B" referredColumn="40601A83-9E6C-68F3-42F2-62EE1BBF5074"/>
+</associations>
+</Column>
+<Column name="id_orientacao" id="82D6EBBD-7AA4-A328-7520-44217E2502E2">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>4778D2B2-EC06-8DB0-6E2A-4AA4EBE70D55</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC0FC66B-E2BC-FFC7-BE3A-1A1DA95348BE" referredColumn="CD1788F2-2635-666E-41CF-CAF53B3A8FE0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0594D96-C00E-7676-ED6A-EB01ED3888F3" name="ACM_LISTA_DIA_PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>FCDF949C-3948-2972-6B12-0FF60A3CF666</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DDA694E-F600-301F-1097-51CD21AF5F62"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B72EFD27-2E9E-35C6-6C5F-2A40CF1C2C59" name="ACM_LISTA_DIA_ACM_CIDADAO_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>9E025DFA-C7FE-0239-CAB1-76A1A3A31A7E</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="129B8B78-CD7C-77C4-BB0A-1B5CBAF24C4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F93100D-706C-DE9B-C120-3871E9E90C8B" name="ACM_LISTA_ORIENTACAO_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>A2988D1E-CF09-7AB8-6970-879E9F1C0724</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82D6EBBD-7AA4-A328-7520-44217E2502E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F64C1477-8412-2A68-0E7E-A132F3685557" name="ACM_LISTA_DIA_ACM_UNIDADE_FK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:20:08 UTC</createdTime>
+<generatorID>9ED23BD0-D6A7-4A24-C28F-C0EA1D688EF4</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FA6A09F-B02A-2AF2-EE03-F37901D9F3A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3BC3F63D-A48B-7CD2-0575-D8E9DA8A2DD6" name="ACM_CONSULTA">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:05:53 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_consulta" id="B4840F07-DB3C-9547-FE2E-230E31133277">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:06:12 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_agendamento" id="2769224F-AF72-B5DC-DD96-5F575D625548">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:06:28 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_confirmacao" id="43209F4A-D551-7BAF-6AB9-F0EE7FB0C580">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:06:54 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_canal_confirmacao" id="158696DE-A9CF-0A5C-DFB8-AAD7E5598BE2">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-10 18:12:17 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_CONSULTA_CANAL</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="APP" description=""/>
+<valueDef value="PRESENCIAL" description=""/>
+<valueDef value="TELEFONE" description=""/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_status" id="8D15672B-52FB-6152-9507-882BDF471881">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:07:39 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_CONSULTA_STATUS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="AGENDADA" description="Marcada, aguardando confirmacao"/>
+<valueDef value="CONFIRMADA" description="Paciente confirmou presenca"/>
+<valueDef value="FALTA" description="Paciente nao compareceu"/>
+<valueDef value="LIBERADA" description="Vaga devolvida para a lista do dia"/>
+<valueDef value="REALIZADA" description="Paciente compareceu"/>
+</listOfValues>
+<defaultValue>AGENDADA</defaultValue>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_prob_falta" id="52C813C1-B5E1-A546-8FB4-877E324092ED">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:08:21 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_CONSULTA_PROB</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>1</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ds_risco_falta" id="3C97386B-D440-A733-A342-D3353B2A3D9A">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:08:45 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<constraintName>CK_ACM_CONSULTA_RISCO</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<listOfValues>
+<valueDef value="ALTO" description="Risco alto de falta"/>
+<valueDef value="BAIXO" description="Risco baixo de falta"/>
+</listOfValues>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_horario" id="9FE8A59C-00CC-7336-CBC0-53089754D2F0">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:55:22 UTC</createdTime>
+<generatorID>EEAD2C4E-D823-3587-034C-FB0D82FD1125</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<referedAttribute>68B0AD62-857E-4945-4F48-1704139553E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cidadao" id="70916C6D-1859-BE08-CEAB-C3C186F1B519">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:01:44 UTC</createdTime>
+<generatorID>457B3F81-8FEE-C6F4-4AE4-01E2A78C6069</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<referedAttribute>BEB1F2D7-BA9F-F035-E633-07F1A74A1076</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_orientacao" id="1D8AAB52-5972-6838-3EC2-F53FF370BB24">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 14:03:16 UTC</createdTime>
+<generatorID>CC8F9D04-E92A-0245-ADAF-F3205BC3960D</generatorID>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C7E41BA0-B382-6F1A-D237-383ED95615E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73CD70C8-5B6A-FD8E-A86A-6521FA95EAE7" name="ACM_CONSULTA PK">
+<createdBy>Usar</createdBy>
+<createdTime>2026-11-08 13:06:25 UTC</createdTime>
+<ownerDesignName>Modelagem - Acolhe</ownerDesignName>
+<engineerTo>
+<item key="5E15541B-0D99-A6A7-DC67-767DBB8078BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B4840F07-DB3C-9547-FE2E-230E31133277</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
